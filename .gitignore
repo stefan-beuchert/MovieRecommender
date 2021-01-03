@@ -1,4 +1,6 @@
 .coverage
+.idea
+.pybuilder
 __pycache__
 recoenv
 target
