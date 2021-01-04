@@ -5,19 +5,19 @@ import pandas as pd
 import config as conf
 
 
-def create_model(processed_data):
-    return create_similarity_matrix(processed_data)
+def create_model(processed_data, target_feature):
+    return create_similarity_matrix(processed_data, target_feature)
 
 
-def create_similarity_matrix(df):
+def create_similarity_matrix(df, target_feature):
     tfidf_vector = TfidfVectorizer()
-    tfidf_matrix = tfidf_vector.fit_transform(df[conf.TARGET_FEATURE])
+    tfidf_matrix = tfidf_vector.fit_transform(df[target_feature])
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 
-def get_recommendation(label, similarity_matrix, data):
+def get_recommendation(label, similarity_matrix, data, label_feature):
     # map datapoint to the indices of the linear kernel
-    indices = pd.Series(data.index, index=data[conf.LABEL_FEATURE]).drop_duplicates()
+    indices = pd.Series(data.index, index=data[label_feature]).drop_duplicates()
     # select list of indices with similarity score to the given data point for each data point
     indices_with_sim_scores = list(enumerate(similarity_matrix[indices[label]]))
     # get the ten indices with the highest similarity score (except the data point itself)

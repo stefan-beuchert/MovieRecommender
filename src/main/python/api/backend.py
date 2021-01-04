@@ -22,7 +22,7 @@ def init(raw_data=None):
                                   conf.TARGET_FEATURE,
                                   conf.UNWANTED_CHARACTERS,
                                   conf.STOP_WORD_LANGUAGE)
-    model = create_model(processed_data)
+    model = create_model(processed_data, conf.TARGET_FEATURE)
 
 
 @app.route('/', methods=['GET'])
@@ -32,14 +32,14 @@ def home():
 
 @app.route('/getRecommendationFor/<label>', methods=['GET'])
 def make_recommendation_from_get_request(label):
-    return get_recommendation(label, model, processed_data)
+    return get_recommendation(label, model, processed_data, conf.LABEL_FEATURE)
 
 
 @app.route('/getRecommendation/', methods=['POST'])
 def make_recommendation_from_post_request():
     req_body = flask.request.get_json()
     label = req_body[conf.REQUEST_LABEL]
-    return get_recommendation(label, model, processed_data)
+    return get_recommendation(label, model, processed_data, conf.LABEL_FEATURE)
 
 
 @app.route('/addDataSet/', methods=['POST'])
