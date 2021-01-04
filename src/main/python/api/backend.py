@@ -30,7 +30,7 @@ def home():
     return "API is working"
 
 
-@app.route('/getRecommendationFor/<' + conf.REQUEST_LABEL + '>', methods=['GET'])
+@app.route('/getRecommendationFor/<label>', methods=['GET'])
 def make_recommendation_from_get_request(label):
     return get_recommendation(label, model, processed_data)
 
