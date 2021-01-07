@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)http://localhost:63342/MovieRecommender/docs/_build/html/index.html?_ijt=bv2keee0cr0e0pj5vkgu8bej8s -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ContentBasedRecommenderSystem’s documentation! — ContentBasedRecommenderSystem  documentation</title>
+    <link rel="stylesheet" href="./documentation_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./documentation_files/alabaster.css" type="text/css">
+    <script id="documentation_options" data-url_root="./" src="./documentation_files/documentation_options.js"></script>
+    <script src="./documentation_files/jquery.js"></script>
+    <script src="./documentation_files/underscore.js"></script>
+    <script src="./documentation_files/doctools.js"></script>
+    <link rel="index" title="Index" href="http://localhost:63342/MovieRecommender/docs/_build/html/genindex.html">
+    <link rel="search" title="Search" href="http://localhost:63342/MovieRecommender/docs/_build/html/search.html">
+   
+  <link rel="stylesheet" href="./documentation_files/custom.css" type="text/css">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-contentbasedrecommendersystem-s-documentation">
+<h1>Welcome to ContentBasedRecommenderSystem’s documentation!<a class="headerlink" href="http://localhost:63342/MovieRecommender/docs/_build/html/index.html?_ijt=bv2keee0cr0e0pj5vkgu8bej8s#welcome-to-contentbasedrecommendersystem-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<span class="target" id="module-processing.data_processing"></span><dl class="py function">
+<dt id="processing.data_processing.clean_data">
+<code class="sig-prename descclassname">processing.data_processing.</code><code class="sig-name descname">clean_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">df_raw</span></em>, <em class="sig-param"><span class="n">important_columns</span></em>, <em class="sig-param"><span class="n">target_feature</span></em>, <em class="sig-param"><span class="n">unwanted_characters</span></em>, <em class="sig-param"><span class="n">stop_word_language</span></em><span class="sig-paren">)</span><a class="headerlink" href="http://localhost:63342/MovieRecommender/docs/_build/html/index.html?_ijt=bv2keee0cr0e0pj5vkgu8bej8s#processing.data_processing.clean_data" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df_raw</strong> – raw data as datafram</p></li>
+<li><p><strong>important_columns</strong> – list of important columns</p></li>
+<li><p><strong>target_feature</strong> – the target feature</p></li>
+<li><p><strong>unwanted_characters</strong> – characters that should be removed</p></li>
+<li><p><strong>stop_word_language</strong> – language id (for example ‘en’ for english)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="processing.data_processing.process_data">
+<code class="sig-prename descclassname">processing.data_processing.</code><code class="sig-name descname">process_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">collection</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">cleaning_parameters</span></em><span class="sig-paren">)</span><a class="headerlink" href="http://localhost:63342/MovieRecommender/docs/_build/html/index.html?_ijt=bv2keee0cr0e0pj5vkgu8bej8s#processing.data_processing.process_data" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – raw data as dataframe, that should be processed</p></li>
+<li><p><strong>collection</strong> – the db collection, where the result should be stored</p></li>
+<li><p><strong>cleaning_parameters</strong> – parameters for data cleaning</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dataframe with processed data</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="processing.data_processing.remove_stopwords">
+<code class="sig-prename descclassname">processing.data_processing.</code><code class="sig-name descname">remove_stopwords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">stop_words</span></em><span class="sig-paren">)</span><a class="headerlink" href="http://localhost:63342/MovieRecommender/docs/_build/html/index.html?_ijt=bv2keee0cr0e0pj5vkgu8bej8s#processing.data_processing.remove_stopwords" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> – string</p></li>
+<li><p><strong>stop_words</strong> – list of stop words</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>string without stop words</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="http://localhost:63342/MovieRecommender/docs/_build/html/index.html?_ijt=bv2keee0cr0e0pj5vkgu8bej8s#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="http://localhost:63342/MovieRecommender/docs/_build/html/genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="http://localhost:63342/MovieRecommender/docs/_build/html/py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="http://localhost:63342/MovieRecommender/docs/_build/html/search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="http://localhost:63342/MovieRecommender/docs/_build/html/index.html?_ijt=bv2keee0cr0e0pj5vkgu8bej8s#">ContentBasedRecommenderSystem</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="http://localhost:63342/MovieRecommender/docs/_build/html/index.html?_ijt=bv2keee0cr0e0pj5vkgu8bej8s#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="http://localhost:63342/MovieRecommender/docs/_build/html/search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel">
+      <input type="submit" value="Go">
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      ©2021, Stefan Beuchert.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="http://localhost:63342/MovieRecommender/docs/_build/html/_sources/index.rst.txt" rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  
+</body></html>
