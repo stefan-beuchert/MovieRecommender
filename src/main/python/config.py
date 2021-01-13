@@ -25,5 +25,3 @@ COLLECTION_PROCESSED_DATA = "tmdb_5000_processed"
 # HTTP Requests
 REQUEST_LABEL = "title"
 REQUEST_TARGET = "overview"
-
-test_attribute = "delte_me"
