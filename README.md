@@ -48,7 +48,8 @@ I used pybuilder as my build management. This was the first time I used a build 
    * [build file](build.py)
    * [automated documentation with sphinx](docs)
    * [example document](tasks/documentation/documentation.html)
-   For unit tests see point 6
+   
+For unit tests see point 6
 ### 6 Unit-Tests
    * [unit tests I](src/unittest/python/modeling/model_training_tests.py)
    * [unit tests II](src/unittest/python/processing/data_processing_tests.py)
