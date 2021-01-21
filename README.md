@@ -17,14 +17,18 @@ this backend be used as a recommender system for all sorts of documents.
 1. Clone this repository
 2. Create a virtual environment
 3. Install pybuilder 
+
 (`pip install pybuilder`)
 4. Start MongoDb
 5. Make necessary adjustments in config.py (especially for the database and dataset paths)
 6. Build the project 
+
 (`pyb publish`)
 7. Install the target 
+
 ( `pip install target/dist/ContentBasedRecommenderSystem-1.0.dev0/dist/ContentBasedRecommenderSystem-1.0.dev0.tar.gz`)
 8. Start the backend 
+
 (`start_api.py`)
 9. Post HTTP-requests via a browser or postman
 10. Enjoy :)
@@ -56,7 +60,7 @@ and the five points, that proof my use of clean code:
 ### 5 Build Management
    
 I used pybuilder as my build management. This was the first time I used a build management in Python 
-   and after some struggles at the beginning, I now see the advantages of pybuiler :)
+and after some struggles at the beginning, I now see the advantages of pybuiler :)
    * [build file](build.py)
    * [automated documentation with sphinx](docs)
    * [example document](tasks/documentation/documentation.html)
