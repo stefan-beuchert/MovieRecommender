@@ -1,12 +1,9 @@
 language: python
 python:
   - "3.8"
+before_install:
+  - python -m pip install --upgrade pip
 install:
   - pip install pybuilder
-  - pip install codecov
-  - pip install pytest-cov
 script:
-  - pyb
-  - pytest --cov-report=xml --cov=movierecommender src/unittest/python/
-after_success:
-  - codecov
+  - pyb # this automatically installs all dependencies and runs tests
