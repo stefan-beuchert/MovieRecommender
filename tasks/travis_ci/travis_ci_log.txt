@@ -1,0 +1,465 @@
+Worker information
+hostname: b48836eb-3b75-4bbd-84f7-a2351a0ec53c@1.worker-org-cfdfb76bd-gntmf.gce-production-4
+version: v6.2.20-1-g3a987d6 https://github.com/travis-ci/worker/tree/3a987d61ed169c9539ad435d1a9b5f2d8c6ce4a6
+instance: travis-job-2286b2ec-fa44-418c-8dc2-cc2e3693ce90 travis-ci-sardonyx-xenial-1593004276-4d46c6b3 (via amqp)
+startup: 6.069198494s
+0.15s0.00s0.01s0.00s0.01s
+system_info
+Build system information
+Build language: python
+Build dist: xenial
+Build id: 757863874
+Job id: 757863875
+Runtime kernel version: 4.15.0-1077-gcp
+travis-build version: 091d532a
+Build image provisioning date and time
+Wed Jun 24 13:36:52 UTC 2020
+Operating System Details
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+Systemd Version
+systemd 229
+Cookbooks Version
+3f92a99 https://github.com/travis-ci/travis-cookbooks/tree/3f92a99
+git version
+git version 2.27.0
+bash version
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+gcc version
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.12) 5.4.0 20160609
+docker version
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+clang version
+clang version 7.0.0 (tags/RELEASE_700/final)
+jq version
+jq-1.5
+bats version
+Bats 0.4.0
+shellcheck version
+0.7.0
+shfmt version
+v2.6.3
+ccache version
+3.2.4
+cmake version
+cmake version 3.12.4
+heroku version
+heroku/7.42.1 linux-x64 node-v12.16.2
+imagemagick version
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2019-11-12 http://www.imagemagick.org
+md5deep version
+4.4
+mercurial version
+version 4.8
+mysql version
+mysql  Ver 14.14 Distrib 5.7.30, for Linux (x86_64) using  EditLine wrapper
+openssl version
+OpenSSL 1.0.2g  1 Mar 2016
+packer version
+1.3.3
+postgresql client version
+psql (PostgreSQL) 10.13 (Ubuntu 10.13-1.pgdg16.04+1)
+ragel version
+Ragel State Machine Compiler version 6.8 Feb 2013
+sudo version
+1.8.16
+gzip version
+gzip 1.6
+zip version
+Zip 3.0
+vim version
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Mar 18 2020 14:06:17)
+iptables version
+iptables v1.6.0
+curl version
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+wget version
+GNU Wget 1.17.1 built on linux-gnu.
+rsync version
+rsync  version 3.1.1  protocol version 31
+gimme version
+v1.5.4
+nvm version
+0.35.3
+perlbrew version
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.88
+phpenv version
+rbenv 1.1.2-30-gc879cb0
+rvm version
+rvm 1.29.10 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+default ruby version
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+CouchDB version
+couchdb 1.6.1
+ElasticSearch version
+5.5.0
+Installed Firefox version
+firefox 63.0.1
+MongoDB version
+MongoDB 4.0.19
+PhantomJS version
+2.1.1
+Pre-installed PostgreSQL versions
+9.4.26
+9.5.22
+9.6.18
+Redis version
+redis-server 6.0.5
+Pre-installed Go versions
+1.11.1
+ant version
+Apache Ant(TM) version 1.9.6 compiled on July 20 2018
+mvn version
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+gradle version
+Gradle 5.1.1!
+lein version
+Leiningen 2.9.3 on Java 11.0.2 OpenJDK 64-Bit Server VM
+Pre-installed Node.js versions
+v10.21.0
+v11.0.0
+v12.18.1
+v4.9.1
+v6.17.1
+v8.12.0
+v8.17.0
+v8.9
+phpenv versions
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+composer --version
+Composer version 1.8.4 2019-02-11 10:52:10
+Pre-installed Ruby versions
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+0.10s0.01s0.80s0.00s0.12s6.03s0.00s2.74s0.00s2.57s
+docker_mtu_and_registry_mirrors
+resolvconf
+Downloading archive: https://storage.googleapis.com/travis-ci-language-archives/python/binaries/ubuntu/16.04/x86_64/python-3.8.tar.bz2
+0.59s$ curl -sSf --retry 5 -o python-3.8.tar.bz2 ${archive_url}
+10.77s$ sudo tar xjf python-3.8.tar.bz2 --directory /
+0.00s
+git.checkout
+1.13s$ git clone --depth=50 --branch=main https://github.com/stefan-beuchert/MovieRecommender.git stefan-beuchert/MovieRecommender
+Cloning into 'stefan-beuchert/MovieRecommender'...
+$ cd stefan-beuchert/MovieRecommender
+$ git checkout -qf 4acf2c99e3f7b957d70669c725d7b53be27680e8
+0.01s0.01s$ source ~/virtualenv/python3.8/bin/activate
+$ python --version
+Python 3.8.7
+$ pip --version
+pip 20.3.3 from /home/travis/virtualenv/python3.8.7/lib/python3.8/site-packages/pip (python 3.8)
+before_install
+2.53s$ python -m pip install --upgrade pip
+Requirement already satisfied: pip in /home/travis/virtualenv/python3.8.7/lib/python3.8/site-packages (20.3.3)
+Collecting pip
+  Downloading pip-21.0.1-py3-none-any.whl (1.5 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 20.3.3
+    Uninstalling pip-20.3.3:
+      Successfully uninstalled pip-20.3.3
+Successfully installed pip-21.0.1
+install
+1.19s$ pip install pybuilder
+Collecting pybuilder
+  Downloading pybuilder-0.12.10-py3-none-any.whl (3.2 MB)
+Installing collected packages: pybuilder
+Successfully installed pybuilder-0.12.10
+sonarcloud.addon
+SonarCloud addon
+addon hash: 718bd39b7176569c0003e2a917d7caf9
+Preparing SonarQube Scanner CLI
+Archive:  /home/travis/.sonarscanner/sonar-scanner.zip
+  inflating: /home/travis/.sonarscanner/sonar-scanner-3.0.3.778/bin/sonar-scanner-debug.bat  
+  inflating: /home/travis/.sonarscanner/sonar-scanner-3.0.3.778/bin/sonar-runner.bat  
+  inflating: /home/travis/.sonarscanner/sonar-scanner-3.0.3.778/bin/sonar-scanner.bat  
+  inflating: /home/travis/.sonarscanner/sonar-scanner-3.0.3.778/bin/sonar-runner  
+  inflating: /home/travis/.sonarscanner/sonar-scanner-3.0.3.778/bin/sonar-scanner  
+  inflating: /home/travis/.sonarscanner/sonar-scanner-3.0.3.778/bin/sonar-scanner-debug  
+   creating: /home/travis/.sonarscanner/sonar-scanner-3.0.3.778/conf/
+  inflating: /home/travis/.sonarscanner/sonar-scanner-3.0.3.778/conf/sonar-scanner.properties  
+   creating: /home/travis/.sonarscanner/sonar-scanner-3.0.3.778/lib/
+  inflating: /home/travis/.sonarscanner/sonar-scanner-3.0.3.778/lib/sonar-scanner-cli-3.0.3.778.jar  
+$ mv ${TRAVIS_HOME}/.sonarscanner/sonar-scanner-* ${TRAVIS_HOME}/.sonarscanner/sonar-scanner
+$ export SONAR_SCANNER_HOME=${TRAVIS_HOME}/.sonarscanner/sonar-scanner
+Preparing build wrapper for SonarSource C/C++ plugin
+Archive:  /home/travis/.sonar/cache/655dcdaefde1b6b1d41c9afcea9ae2a7/build-wrapper-linux-x86.zip
+   creating: /home/travis/.sonar/cache/655dcdaefde1b6b1d41c9afcea9ae2a7/build-wrapper-linux-x86/
+  inflating: /home/travis/.sonar/cache/655dcdaefde1b6b1d41c9afcea9ae2a7/build-wrapper-linux-x86/libinterceptor-x86_64.so  
+  inflating: /home/travis/.sonar/cache/655dcdaefde1b6b1d41c9afcea9ae2a7/build-wrapper-linux-x86/libinterceptor-i686.so  
+  inflating: /home/travis/.sonar/cache/655dcdaefde1b6b1d41c9afcea9ae2a7/build-wrapper-linux-x86/libinterceptor-haswell.so  
+  inflating: /home/travis/.sonar/cache/655dcdaefde1b6b1d41c9afcea9ae2a7/build-wrapper-linux-x86/build-wrapper-linux-x86-64  
+Preparing SonarQube Scanner parameters
+57.80s$ pyb
+PyBuilder version 0.12.10
+Build started at 2021-02-06 21:41:55
+------------------------------------------------------------
+[INFO]  Building ContentBasedRecommenderSystem version 1.0.dev0
+[INFO]  Executing build in /home/travis/build/stefan-beuchert/MovieRecommender
+[INFO]  Going to execute task publish
+[INFO]  Processing plugin packages 'coverage~=5.2' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'flake8~=3.7' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'pypandoc~=1.4' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'setuptools>=38.6.0' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'sphinx' to be installed with {}
+[INFO]  Processing plugin packages 'twine>=1.15.0' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'unittest-xml-reporting~=3.0.2' to be installed with {'upgrade': True}
+[INFO]  Processing plugin packages 'wheel>=0.34.0' to be installed with {'upgrade': True}
+[INFO]  Creating target 'build' VEnv in '/home/travis/build/stefan-beuchert/MovieRecommender/target/venv/build/cpython-3.8.7.final.0'
+[INFO]  Processing dependency packages 'flask' to be installed with {}
+[INFO]  Processing dependency packages 'flask_wtf' to be installed with {}
+[INFO]  Processing dependency packages 'pandas' to be installed with {}
+[INFO]  Processing dependency packages 'pymongo' to be installed with {}
+[INFO]  Processing dependency packages 'sklearn' to be installed with {}
+[INFO]  Processing dependency packages 'stop_words' to be installed with {}
+[INFO]  Creating target 'test' VEnv in '/home/travis/build/stefan-beuchert/MovieRecommender/target/venv/test/cpython-3.8.7.final.0'
+[INFO]  Processing dependency packages 'flask' to be installed with {}
+[INFO]  Processing dependency packages 'flask_wtf' to be installed with {}
+[INFO]  Processing dependency packages 'pandas' to be installed with {}
+[INFO]  Processing dependency packages 'pymongo' to be installed with {}
+[INFO]  Processing dependency packages 'sklearn' to be installed with {}
+[INFO]  Processing dependency packages 'stop_words' to be installed with {}
+[INFO]  Requested coverage for tasks: pybuilder.plugins.python.unittest_plugin:run_unit_tests
+[INFO]  Running unit tests
+[INFO]  Executing unit tests from Python modules in /home/travis/build/stefan-beuchert/MovieRecommender/src/unittest/python
+[INFO]  Executed 3 unit tests
+[INFO]  All unit tests passed.
+[INFO]  Building distribution in /home/travis/build/stefan-beuchert/MovieRecommender/target/dist/ContentBasedRecommenderSystem-1.0.dev0
+[INFO]  Copying scripts to /home/travis/build/stefan-beuchert/MovieRecommender/target/dist/ContentBasedRecommenderSystem-1.0.dev0/scripts
+[INFO]  Writing setup.py as /home/travis/build/stefan-beuchert/MovieRecommender/target/dist/ContentBasedRecommenderSystem-1.0.dev0/setup.py
+[INFO]  Collecting coverage information for 'pybuilder.plugins.python.unittest_plugin:run_unit_tests'
+[WARN]  ut_coverage_branch_threshold_warn is 0 and branch coverage will not be checked
+[WARN]  ut_coverage_branch_partial_threshold_warn is 0 and partial branch coverage will not be checked
+[INFO]  Running unit tests
+[INFO]  Executing unit tests from Python modules in /home/travis/build/stefan-beuchert/MovieRecommender/src/unittest/python
+[INFO]  Executed 3 unit tests
+[INFO]  All unit tests passed.
+[WARN]  Test coverage below 70% for in_out: 50%
+[WARN]  Test coverage below 70% for preparation.data_preparation:  0%
+[WARN]  Test coverage below 70% for api.backend:  0%
+[WARN]  Test coverage below 70% for modeling.model_training: 66%
+[WARN]  Overall pybuilder.plugins.python.unittest_plugin.run_unit_tests coverage is below 70%: 44%
+[INFO]  Overall pybuilder.plugins.python.unittest_plugin.run_unit_tests branch coverage is 62%
+[INFO]  Overall pybuilder.plugins.python.unittest_plugin.run_unit_tests partial branch coverage is 100%
+[WARN]  Test coverage below 70% for in_out: 50%
+[WARN]  Test coverage below 70% for preparation.data_preparation:  0%
+[WARN]  Test coverage below 70% for api.backend:  0%
+[WARN]  Test coverage below 70% for modeling.model_training: 66%
+[WARN]  Overall ContentBasedRecommenderSystem coverage is below 70%: 44%
+[INFO]  Overall ContentBasedRecommenderSystem branch coverage is 62%
+[INFO]  Overall ContentBasedRecommenderSystem partial branch coverage is 100%
+[INFO]  Building binary distribution in /home/travis/build/stefan-beuchert/MovieRecommender/target/dist/ContentBasedRecommenderSystem-1.0.dev0
+[INFO]  Running Twine check for generated artifcats
+------------------------------------------------------------
+BUILD SUCCESSFUL
+------------------------------------------------------------
+Build Summary
+             Project: ContentBasedRecommenderSystem
+             Version: 1.0.dev0
+      Base directory: /home/travis/build/stefan-beuchert/MovieRecommender
+        Environments: 
+               Tasks: prepare [49780 ms] compile_sources [0 ms] run_unit_tests [1040 ms] package [2 ms] run_integration_tests [0 ms] verify [0 ms] coverage [1645 ms] publish [1021 ms]
+Build finished at 2021-02-06 21:42:52
+Build took 57 seconds (57618 ms)
+The command "pyb" exited with 0.
+55.27s$ sonar-scanner
+INFO: Scanner configuration file: /home/travis/.sonarscanner/sonar-scanner/conf/sonar-scanner.properties
+INFO: Project root configuration file: /home/travis/build/stefan-beuchert/MovieRecommender/sonar-project.properties
+INFO: SonarQube Scanner 3.0.3.778
+INFO: Java 11.0.2 Oracle Corporation (64-bit)
+INFO: Linux 4.15.0-1077-gcp amd64
+INFO: User cache: /home/travis/.sonar/cache
+INFO: SonarQube server 8.5.0
+INFO: Default locale: "en_US", source code encoding: "UTF-8"
+INFO: Load global settings
+INFO: Load global settings (done) | time=672ms
+INFO: Server id: 1BD809FA-AWHW8ct9-T_TB3XqouNu
+INFO: User cache: /home/travis/.sonar/cache
+INFO: Load/download plugins
+INFO: Load plugins index
+INFO: Load plugins index (done) | time=178ms
+INFO: Load/download plugins (done) | time=24232ms
+INFO: Loaded core extensions: developer-scanner
+INFO: JavaScript/TypeScript frontend is enabled
+INFO: Found an active CI vendor: 'TravisCI'
+INFO: Load project settings for component key: 'stefan-beuchert_MovieRecommender'
+INFO: Load project settings for component key: 'stefan-beuchert_MovieRecommender' (done) | time=127ms
+INFO: Process project properties
+INFO: Execute project builders
+INFO: Execute project builders (done) | time=4ms
+INFO: Project key: stefan-beuchert_MovieRecommender
+INFO: Base dir: /home/travis/build/stefan-beuchert/MovieRecommender
+INFO: Working dir: /home/travis/build/stefan-beuchert/MovieRecommender/.scannerwork
+INFO: Load project branches
+INFO: Load project branches (done) | time=129ms
+INFO: Check ALM binding of project 'stefan-beuchert_MovieRecommender'
+INFO: Detected project binding: BOUND
+INFO: Check ALM binding of project 'stefan-beuchert_MovieRecommender' (done) | time=122ms
+INFO: Load project pull requests
+INFO: Load project pull requests (done) | time=126ms
+INFO: Load branch configuration
+INFO: Load branch configuration (done) | time=3ms
+INFO: Load quality profiles
+INFO: Load quality profiles (done) | time=162ms
+INFO: Load active rules
+INFO: Load active rules (done) | time=3559ms
+INFO: Organization key: stefan-beuchert
+INFO: Indexing files...
+INFO: Project configuration:
+INFO: 10 files indexed
+INFO: 6 files ignored because of scm ignore settings
+INFO: Quality profile for py: Sonar way
+INFO: ------------- Run sensors on module MovieRecommender
+INFO: JavaScript/TypeScript frontend is enabled
+INFO: Load metrics repository
+INFO: Load metrics repository (done) | time=139ms
+INFO: Sensor SonarCSS Rules [cssfamily]
+INFO: No CSS, PHP, HTML or VueJS files are found in the project. CSS analysis is skipped.
+INFO: Sensor SonarCSS Rules [cssfamily] (done) | time=1ms
+INFO: Sensor C# Properties [csharp]
+INFO: Sensor C# Properties [csharp] (done) | time=1ms
+INFO: Sensor JavaXmlSensor [java]
+INFO: Sensor JavaXmlSensor [java] (done) | time=1ms
+INFO: Sensor HTML [web]
+INFO: Sensor HTML [web] (done) | time=4ms
+INFO: Sensor VB.NET Properties [vbnet]
+INFO: Sensor VB.NET Properties [vbnet] (done) | time=1ms
+INFO: Sensor Python Sensor [python]
+INFO: Starting global symbols computation
+INFO: 9 source files to be analyzed
+INFO: Load project repositories
+INFO: Load project repositories (done) | time=132ms
+INFO: 5/9 files analyzed, current file: src/main/python/api/backend.py
+INFO: 9/9 source files have been analyzed
+INFO: Starting rules execution
+INFO: 9 source files to be analyzed
+INFO: 9/9 source files have been analyzed
+INFO: Sensor Python Sensor [python] (done) | time=12340ms
+INFO: Sensor Cobertura Sensor for Python coverage [python]
+INFO: Sensor Cobertura Sensor for Python coverage [python] (done) | time=273ms
+INFO: Sensor PythonXUnitSensor [python]
+INFO: Sensor PythonXUnitSensor [python] (done) | time=167ms
+INFO: Sensor JaCoCo XML Report Importer [jacoco]
+INFO: 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
+INFO: No report imported, no coverage information will be imported by JaCoCo XML Report Importer
+INFO: Sensor JaCoCo XML Report Importer [jacoco] (done) | time=4ms
+INFO: Sensor ThymeLeaf template sensor [securityjavafrontend]
+INFO: Sensor ThymeLeaf template sensor [securityjavafrontend] (done) | time=1ms
+INFO: Sensor Python HTML templates processing [securitypythonfrontend]
+INFO: HTML files are not indexed : you may want to add them in the scanned files of this project to detect Python XSS vulnerabilities
+INFO: Sensor Python HTML templates processing [securitypythonfrontend] (done) | time=3ms
+INFO: Sensor JavaSecuritySensor [security]
+INFO: Reading type hierarchy from: /home/travis/build/stefan-beuchert/MovieRecommender/.scannerwork/ucfg2/java
+INFO: Read 0 type definitions
+INFO: Reading UCFGs from: /home/travis/build/stefan-beuchert/MovieRecommender/.scannerwork/ucfg2/java
+INFO: No UCFGs have been included for analysis.
+INFO: Sensor JavaSecuritySensor [security] (done) | time=10ms
+INFO: Sensor CSharpSecuritySensor [security]
+INFO: Reading type hierarchy from: /home/travis/build/stefan-beuchert/MovieRecommender/ucfg_cs2
+INFO: Read 0 type definitions
+INFO: Reading UCFGs from: /home/travis/build/stefan-beuchert/MovieRecommender/ucfg_cs2
+INFO: No UCFGs have been included for analysis.
+INFO: Sensor CSharpSecuritySensor [security] (done) | time=10ms
+INFO: Sensor PhpSecuritySensor [security]
+INFO: Reading type hierarchy from: /home/travis/build/stefan-beuchert/MovieRecommender/.scannerwork/ucfg2/php
+INFO: Read 0 type definitions
+INFO: Reading UCFGs from: /home/travis/build/stefan-beuchert/MovieRecommender/.scannerwork/ucfg2/php
+INFO: No UCFGs have been included for analysis.
+INFO: Sensor PhpSecuritySensor [security] (done) | time=1ms
+INFO: Sensor PythonSecuritySensor [security]
+INFO: Reading type hierarchy from: /home/travis/build/stefan-beuchert/MovieRecommender/.scannerwork/ucfg2/python
+INFO: Read 770 type definitions
+INFO: Reading UCFGs from: /home/travis/build/stefan-beuchert/MovieRecommender/.scannerwork/ucfg2/python
+INFO: 21:43:45.686435 Building Runtime Type propagation graph
+INFO: 21:43:45.753691 Running Tarjan on 7678 nodes
+INFO: 21:43:45.774455 Tarjan found 7678 components
+INFO: 21:43:45.816816 Variable type analysis: done
+INFO: 21:43:45.820135 Building Runtime Type propagation graph
+INFO: 21:43:45.85408 Running Tarjan on 7626 nodes
+INFO: 21:43:45.872449 Tarjan found 7626 components
+INFO: 21:43:45.903788 Variable type analysis: done
+INFO: Analyzing 3146 ucfgs to detect vulnerabilities.
+INFO: All rules entrypoints : 1 Retained UCFGs : 1
+INFO: rule: S5334, entrypoints: 0
+INFO: rule: S5334 done
+INFO: rule: S5135, entrypoints: 0
+INFO: rule: S5135 done
+INFO: rule: S3649, entrypoints: 0
+INFO: rule: S3649 done
+INFO: rule: S5146, entrypoints: 0
+INFO: rule: S5146 done
+INFO: rule: S2083, entrypoints: 0
+INFO: rule: S2083 done
+INFO: rule: S2091, entrypoints: 0
+INFO: rule: S2091 done
+INFO: rule: S2078, entrypoints: 0
+INFO: rule: S2078 done
+INFO: rule: S5145, entrypoints: 0
+INFO: rule: S5145 done
+INFO: rule: S5167, entrypoints: 0
+INFO: rule: S5167 done
+INFO: rule: S5144, entrypoints: 0
+INFO: rule: S5144 done
+INFO: rule: S2076, entrypoints: 0
+INFO: rule: S2076 done
+INFO: rule: S5131, entrypoints: 1
+INFO: Running Steengaards analysis
+INFO: Visited 1 ucfgs in 36 ms, 6 steps
+INFO: rule: S5131 done
+INFO: rule: S2631, entrypoints: 0
+INFO: rule: S2631 done
+INFO: Sensor PythonSecuritySensor [security] (done) | time=1509ms
+INFO: Sensor JsSecuritySensor [security]
+INFO: Reading type hierarchy from: /home/travis/build/stefan-beuchert/MovieRecommender/.scannerwork/ucfg2/js
+INFO: Read 0 type definitions
+INFO: Reading UCFGs from: /home/travis/build/stefan-beuchert/MovieRecommender/.scannerwork/ucfg2/js
+INFO: No UCFGs have been included for analysis.
+INFO: Sensor JsSecuritySensor [security] (done) | time=7ms
+INFO: ------------- Run sensors on project
+INFO: Sensor Zero Coverage Sensor
+INFO: Sensor Zero Coverage Sensor (done) | time=19ms
+INFO: CPD Executor 2 files had no CPD blocks
+INFO: CPD Executor Calculating CPD for 7 files
+INFO: CPD Executor CPD calculation finished (done) | time=13ms
+INFO: Analysis report generated in 374ms, dir size=188 KB
+INFO: Analysis report compressed in 44ms, zip size=50 KB
+INFO: Analysis report uploaded in 405ms
+INFO: ANALYSIS SUCCESSFUL, you can find the results at: https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender
+INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+INFO: More about the report processing at https://sonarcloud.io/api/ce/task?id=AXd5TQd0PeKkDp4-d7Et
+INFO: Analysis total time: 24.579 s
+INFO: ------------------------------------------------------------------------
+INFO: EXECUTION SUCCESS
+INFO: ------------------------------------------------------------------------
+INFO: Total time: 54.444s
+INFO: Final Memory: 193M/647M
+INFO: ------------------------------------------------------------------------
+The command "sonar-scanner" exited with 0.
+Done. Your build exited with 0.
