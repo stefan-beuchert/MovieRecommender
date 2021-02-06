@@ -1,7 +1,14 @@
 # Movie Recommender System
 
 ## Badges
-(https://travis-ci.org/stefan-beuchert/MovieRecommender.svg?branch=main)
+![travis_build](https://travis-ci.org/stefan-beuchert/MovieRecommender.svg?branch=main)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=stefan-beuchert_MovieRecommender&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=stefan-beuchert_MovieRecommender&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=stefan-beuchert_MovieRecommender&metric=security_rating)](https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=stefan-beuchert_MovieRecommender&metric=sqale_index)](https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=stefan-beuchert_MovieRecommender&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=stefan-beuchert_MovieRecommender&metric=bugs)](https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=stefan-beuchert_MovieRecommender&metric=code_smells)](https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender)
 
 ## Exercise A for Advanced Software Engineering
 
