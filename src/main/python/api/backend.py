@@ -7,6 +7,7 @@ from processing.data_processing import process_data
 from modeling.model_training import create_model, get_recommendation
 
 app = flask.Flask(__name__)
+app.config['WTF_CSRF_ENABLED'] = False
 app.config["DEBUG"] = True
 
 
