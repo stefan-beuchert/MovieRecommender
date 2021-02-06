@@ -1,9 +1,15 @@
 language: python
 python:
   - "3.8"
+addons:
+  sonarcloud:
+    organization: "stefan-beuchert"
+    token:
+      secure: "F+olND4stQsju8nMV4DqxObsx3/mQilUknE4QykR1jhT+141qz9ajy6FGp5E/7ZWyMASFFK1Jy9HGZTSTvAlrO19EoJBp1NxZ5ED8OIx2S1hlmApxyspzoFB1F7t+9TbFc9zf0Yq1uPA/dM915Tyab0DJqXfw9UR2FeE6mdmtjyhi963SXtj+A9hcTs/chxkXbmbIyK8DNGGAxvaEH9x5YvD0PbNSK9O2nif+aaSvApheH6VJLJhHPvzW7o3Pehxhqg+R2cqsaZ7IZZ3BhMWqm1alwQ91ZmKQc0aLjjE7kE5v2EmDMLKISp3xVHRtuUJdtDwf95CptQSAUEpEOz+mYdGdnHf1TAv1OsbLDUxrJfiVYLBzXtQI0IY9RS1yHZM21t5EuGPafRibPal7r00M7oymdVid8cQdppxJPDIAj1lTTNVcP2MP2EtTnV7dS6hlJIYDdFlc9PtXGRu0U8d9sVydTvhd6gbKHeO5Jx0bwaeNFNq/yZa6yqUYU6OUufG2wtj9iQr3x1QL7ztkCZwkcbtkTUh2jbuCGrWOgjCa56grNJnVT2cCai9xtW7jd7SiG1ad/D0f0xbp2AiMU4Iz3nTbsL7RaHOywZeRYLhUh1yZ7DZWI0MbtxKKhcZyTAXd4umimCRmKZHlHpqot8qGpLlIPD7Bqzr4Fnju9XHPYM="
 before_install:
   - python -m pip install --upgrade pip
 install:
   - pip install pybuilder
 script:
   - pyb # this automatically installs all dependencies and runs tests
+  - sonar-scanner

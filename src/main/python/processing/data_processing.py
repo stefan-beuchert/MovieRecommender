@@ -31,8 +31,8 @@ def clean_data(df_raw, important_columns, target_feature, unwanted_characters, s
     # delete rows where the target feature (should be a string) is empty
     df.where(df[target_feature] != "")
     # removing unwanted characters
-    for char in unwanted_characters:
-        df.loc[:, target_feature] = df[target_feature].apply(lambda text: text.replace(char, ''))
+    for unwanted_char in unwanted_characters:
+        df.loc[:, target_feature] = df[target_feature].apply(lambda text, char=unwanted_char: text.replace(char, ''))
     # standardisation by converting to lower case
     df.loc[:, target_feature] = df[target_feature].apply(lambda text: str.lower(text))
     # removing stopwords
