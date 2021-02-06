@@ -16,6 +16,7 @@ default_task = "publish"
 @init
 def set_properties(project):
     project.depends_on('flask')
+    project.depends_on('falsk.wtf')
     project.depends_on('pymongo')
     project.depends_on('pandas')
     project.depends_on('stop_words')

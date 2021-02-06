@@ -1,4 +1,5 @@
 import flask
+from flask_wtf.csrf import CSRFProtect
 
 import config as conf
 from in_out import connect_to_db, add_new_data_to_db, get_data, delete_data_from_db
@@ -9,6 +10,8 @@ from modeling.model_training import create_model, get_recommendation
 app = flask.Flask(__name__)
 app.config['WTF_CSRF_ENABLED'] = True
 app.config["DEBUG"] = True
+
+csrf = CSRFProtect(app)
 
 
 def init(raw_data=None):
