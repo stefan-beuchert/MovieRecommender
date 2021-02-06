@@ -12,4 +12,4 @@ install:
   - pip install pybuilder
 script:
   - pyb # this automatically installs all dependencies and runs tests
-  - sonar-scanner
+  - sonar-scanner -X
