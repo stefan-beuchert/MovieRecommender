@@ -1,7 +1,7 @@
 # Movie Recommender System
 
 ## Badges
-![example workflow name](https://travis-ci.org/stefan-beuchert/MovieRecommender.svg?branch=main)
+(https://travis-ci.org/stefan-beuchert/MovieRecommender.svg?branch=main)
 
 ## Exercise A for Advanced Software Engineering
 
