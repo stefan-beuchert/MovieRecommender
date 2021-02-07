@@ -93,7 +93,7 @@ And [this](tasks/SonarCloud.PNG) is a screenshot of the website, if it should no
 
 ### 4 Clean Code Development
    
-A cheat sheet with my most important clean code principles:
+A cheat sheet with my most important clean code principles. I decided to write my cheat sheet in python, so I can test my code examples right on the spot.
    * [Cheat Sheet](tasks/clean_code_cheat_sheet.py)
    
 and the five points, that proof my use of clean code:
