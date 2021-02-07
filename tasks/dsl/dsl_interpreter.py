@@ -35,12 +35,3 @@ with open(sys.argv[1]) as file:
             b = int(parts[4]) if parts[4].isdigit() else variables[parts[4]]
 
             variables[parts[0]] = functions[parts[3]](a, b)
-
-
-
-
-
-
-
-
-
