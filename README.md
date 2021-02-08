@@ -96,12 +96,34 @@ And [this](tasks/SonarCloud.PNG) is a screenshot of the website, if it should no
 A cheat sheet with my most important clean code principles. I decided to write my cheat sheet in python, so I can test my code examples right on the spot.
    * [Cheat Sheet](tasks/clean_code_cheat_sheet.py)
    
-and the five points, that proof my use of clean code:
-   * A
-   * B
-   * C
-   * D
-   * E
+And the five points, that proof my use of clean code. You can finde more details for each point in the linked file.
+
+   * Cheat Sheet points 3 and 4:
+
+      Keeping statements simple and making them multiline, if necessary.
+      This can also help debuging code, by just commenting out one or more lines
+      and still keep the statement syntacticly correct.
+
+      [backend.py](src/main/python/api/backend.py)
+
+   * Cheat Sheet point  8: 
+   
+      Choosing good variable names, to make code selfexplanatory. 
+
+      [data_processing.py](src/main/python/processing/data_preprocessing.py)
+
+   * Cheat Sheet point 14
+
+      Use as few function parameters as possible.
+
+      [data_processing.py](src/main/python/processing/data_preprocessing.py)
+
+
+
+   * Cheat Sheet point
+   data_processing.py line 37 using lambda for simple functions to keep code short and still understandable
+   
+   * Config file -> no string declarations or magic numbers outside the config file
    
 ### 5 Build Management
    
@@ -163,3 +185,10 @@ The [.dsl file](tasks/dsl/simple.dsl) contains my external DSL code. I made a si
 The [interpreter](tasks/dsl/dsl_interpreter.py) is used to convert the .dsl file into python code and execute each line.
    
 ### 10 Functional Programming
+
+   * only final data structures
+   * (mostly) side effect free functions
+   * the use of higher-order functions
+   * functions as parameters and return values
+      in_out.py line 8
+   * use closures / anonymous functions

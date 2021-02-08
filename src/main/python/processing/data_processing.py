@@ -1,3 +1,22 @@
+####################################
+# Task B.4. Clean Code Development 
+####################################
+#
+# Cheat Sheet point 14:
+# In order to keep the programm as simple as possible, 
+# the use of arguments in a function should be minimized.
+# Somethimes you can use asterisks for packing arguments.
+#
+# See line __ in this file
+# ------------------------
+#
+# Cheat Sheet point 8:
+# The use of good variable names makes code more understandable, 
+# which can make additional comments unnecessary.
+#
+# See line __ in this file
+
+
 from stop_words import get_stop_words
 
 from in_out import save_data, connect_to_db
@@ -10,6 +29,9 @@ def process_data(data, collection, *cleaning_parameters):
     :param cleaning_parameters: parameters for data cleaning
     :return: dataframe with processed data
     """
+
+    # 
+
     processed_data = clean_data(data, *cleaning_parameters).reset_index()
     save_data(collection, processed_data)
     return processed_data
@@ -42,11 +64,15 @@ def clean_data(df_raw, important_columns, target_feature, unwanted_characters, s
     return df.drop_duplicates()
 
 
-def remove_stopwords(text, stop_words):
+def remove_stopwords(text, stop_word_list):
     """
     :param text: string
-    :param stop_words: list of stop words
+    :param stop_word_list: list of stop words
     :return: string without stop words
     """
-    text_without_stopwords = ' '.join(word for word in text.split() if word not in stop_words)
+
+    # For the statement below is no comment needed, because the code explains itself.
+    # Thanks to good variable names the code can almost be read as english sentence.
+    
+    text_without_stopwords = ' '.join(word for word in text.split() if word not in stop_word_list)
     return text_without_stopwords

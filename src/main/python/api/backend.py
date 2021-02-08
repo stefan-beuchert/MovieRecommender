@@ -1,3 +1,13 @@
+####################################
+# Task B.4. Clean Code Development 
+####################################
+#
+# The use of multiline statements if necessary. 
+# This can make the code more readable and help with debuging.
+#
+# See line 34 in this file
+
+
 import flask
 from flask_wtf.csrf import CSRFProtect
 
@@ -20,6 +30,12 @@ def init(raw_data=None):
 
     if raw_data is None:
         raw_data = get_data(db[conf.COLLECTION_RAW_DATA])
+
+    # In the following case a very long statement has been split up in multiple lines.
+    # It is easily recognisable what values are passed in to the function.
+    # If I wanted to change or exclude on value temporarily (for example for debuging)
+    # I just could comment out one line and add a new value in front of the comment.
+    
     processed_data = process_data(raw_data,
                                   db[conf.COLLECTION_PROCESSED_DATA],
                                   conf.DATA_COLUMNS,
