@@ -7,14 +7,25 @@
 # the use of arguments in a function should be minimized.
 # Somethimes you can use asterisks for packing arguments.
 #
-# See line __ in this file
+# See line 33 in this file
 # ------------------------
 #
 # Cheat Sheet point 8:
 # The use of good variable names makes code more understandable, 
 # which can make additional comments unnecessary.
 #
-# See line __ in this file
+# See line 77 in this file
+
+####################################
+# Task B.10. Functional Programming
+####################################
+#
+# The use of closures / anonymous functions:
+# Lambda functions can be very usefull, when we need a function only for a short period of time.
+# In the following case I have some simple functions, that I can just declare as namles function inside another function.
+# Since they are very simple and only needed for a short period of time, I use lambda functions.
+# 
+# See line 71 and following
 
 
 from stop_words import get_stop_words
@@ -30,7 +41,10 @@ def process_data(data, collection, *cleaning_parameters):
     :return: dataframe with processed data
     """
 
-    # 
+    # In this case, the process_data function receves multiple parameters.
+    # But since a lot of them are not used in this functen, the are packed with the use of asterisk. 
+    # The same happens, when passing those arguemtns to the "clean_data" function.
+    # This method reduces the count of parameters from 4 to 1, if we count the pack of paramters as a single parameter.
 
     processed_data = clean_data(data, *cleaning_parameters).reset_index()
     save_data(collection, processed_data)

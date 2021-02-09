@@ -195,3 +195,10 @@ def make_something(x):
 # 15 don't write your own code
 # whenever there is a library available, that can make your project easier, use it!
 # using library's means having less code and therefore less bad code
+
+# 16 use a config file
+# The use of a config file is very important, to keep all configurations in one place.
+# The config file should contain all numerical and string variables, that are build from
+# hard coded values. All those variables should be made global (look at the correct naming conventions).
+# A config file makes it much more easy for you and other to understand the code.
+# This can also solves the "magic numbers" problem.

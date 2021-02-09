@@ -49,10 +49,12 @@ This software is not only limited to a specific datasets. By simply changing som
    
 I made 3 UML diagrams for this project. Each of those diagram has blue and orange parts. The blue parts are features that are already implemented in this project and the orang features may be added in future versions.
    * A [Use Case diagram](tasks/uml_diagrams/use_case_diagram.png) that shows the different actores and the variouse functions of the system. 
-   * A [Sequence diagram](tasks/uml_diagrams/sequence_diagram.png) that shows the different events that can occure while using the system. ---> im diagram fehlen noch farben
-   * A [Activity diagram](tasks/uml_diagrams/activity_diagram.png) that shows the flow between different activitys. ---> ist grün statt blau
+   * A [Sequence diagram](tasks/uml_diagrams/sequence_diagram.png) that shows the different events that can occure while using the system. 
+   * A [Activity diagram](tasks/uml_diagrams/activity_diagram.png) that shows the flow between different activitys. 
   
 ### 2 DDD
+
+
 
 ### 3 Metrics
 For metrics I used Sonarqube (SonarCloud to be specific).
@@ -118,12 +120,14 @@ And the five points, that proof my use of clean code. You can finde more details
 
       [data_processing.py](src/main/python/processing/data_preprocessing.py)
 
-
-
    * Cheat Sheet point
    data_processing.py line 37 using lambda for simple functions to keep code short and still understandable
    
-   * Config file -> no string declarations or magic numbers outside the config file
+   * Cheat Sheet point 16
+
+      Use a config file!
+
+      [config.py](src/main/python/config.py)
    
 ### 5 Build Management
    
@@ -132,7 +136,6 @@ and after some struggles at the beginning, I now see the advantages of pybuiler 
    * My [build file](build.py)
    * The files for [automated documentation with sphinx](docs)
    * An [example documentation](tasks/documentation/documentation.html), but it seems that github only shows raw html code. [This](https://htmlpreview.github.io/) webiste can help, to render the documentation even if it does not display everything correctly.
-
 
 ### 6 Unit-Tests
 
@@ -155,7 +158,7 @@ I also encluded a [screenshot](tasks/travis_ci/travis_ci.PNG) and the [log file]
 
 ### 8 IDE
 
-   I used the PyCharm IDE for my project.
+I used the PyCharm IDE for my project.
 
 My first choice for an IDE would have been Visual Studio Code. But after I had decided to implement my project in Python, I chose PyCharm. This was not because of any specific feature, but just the fact that I had heard of PyCharm in the past and wanted to test it out.
 
@@ -176,7 +179,6 @@ My favorite shortcuts are:
 * hitting 'shift' twice, for quickly going in search mode
 * 'ctrl' + 'alt' + 'l', for reformating the current file, without going through the suggestion menu
 
-   
 ### 9 DSL
 
 My DSL is independent from the movie recommender system. 
@@ -188,7 +190,8 @@ The [interpreter](tasks/dsl/dsl_interpreter.py) is used to convert the .dsl file
 
    * only final data structures
    * (mostly) side effect free functions
+      -> model_training.py
    * the use of higher-order functions
    * functions as parameters and return values
-      in_out.py line 8
    * use closures / anonymous functions
+      -> model data_processing.py

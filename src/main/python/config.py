@@ -1,3 +1,16 @@
+####################################
+# Task B.4. Clean Code Development 
+####################################
+#
+# A config file containing hard coded global variables makes code much more comprehensible,
+# since all hard coded variables are contained in one file and can therefore be easyli acessed and alterd.
+# This can help with the "magic numbers" problem and makes the code more concistent.
+# This config file is the only file in this project, that contains hard coded variables.
+# Therefor it is very easy to change values to configure the programm, without having
+# to fear inconsistencies with other variables that might be hard coded in other files.
+
+
+
 import os
 
 # data specific constants
