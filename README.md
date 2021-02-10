@@ -53,7 +53,15 @@ I made 3 UML diagrams for this project. Each of those diagram has blue and orang
    * A [Activity diagram](tasks/uml_diagrams/activity_diagram.png) that shows the flow between different activitys. 
   
 ### 2 DDD
+   * Problem Space
+      * Domain with Subdomains
 
+   * Solution Space
+      * Bounded Contexts with realationships
+      * Context Map
+
+   * Ubiquitous Language
+      * Glossary
 
 
 ### 3 Metrics
