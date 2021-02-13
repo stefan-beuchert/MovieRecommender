@@ -70,7 +70,10 @@ def clean_data(df_raw, important_columns, target_feature, unwanted_characters, s
     for unwanted_char in unwanted_characters:
         df.loc[:, target_feature] = df[target_feature].apply(lambda text, char=unwanted_char: text.replace(char, ''))
     # standardisation by converting to lower case
-    df.loc[:, target_feature] = df[target_feature].apply(lambda text: str.lower(text))
+    # example of the higher order function "map"
+    mapped_feature = map(str.lower, df[target_feature])
+    df.loc[:, target_feature] = list(mapped_feature)
+    # df.loc[:, target_feature] = df[target_feature].apply(lambda text: str.lower(text))
     # removing stopwords
     stop_words = get_stop_words(stop_word_language)
     df.loc[:, target_feature] = df[target_feature].apply(lambda text: remove_stopwords(text, stop_words))
