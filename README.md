@@ -54,14 +54,13 @@ I made 3 UML diagrams for this project. Each of those diagram has blue and orang
   
 ### 2 DDD
    * Problem Space
-      * Domain with Subdomains
+      * [Domain](tasks/ddd/ddd_problem_space.png) with Subdomains.
 
    * Solution Space
-      * Bounded Contexts with realationships
-      * Context Map
+      * [Context Map](tasks/ddd/ddd_solution_space.png) with Bounded Contexts and realationships.
 
    * Ubiquitous Language
-      * Glossary
+      * [Glossary](tasks_ddd/ubiquitous_language.pdf) with the most important terms.
 
 
 ### 3 Metrics
