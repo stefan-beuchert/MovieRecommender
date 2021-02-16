@@ -63,7 +63,7 @@ I made 3 UML diagrams for this project. Each of those diagram has blue and orang
       * [Context Map](tasks/ddd/ddd_solution_space.png) with Bounded Contexts and realationships.
 
    * Ubiquitous Language
-      * [Glossary](tasks_ddd/ubiquitous_language.pdf) with the most important terms. 
+      * [Glossary](tasks/ddd/ubiquitous_language.pdf) with the most important terms. 
 
 
 ### 3 Metrics
@@ -202,7 +202,8 @@ The [interpreter](tasks/dsl/dsl_interpreter.py) is used to convert the .dsl file
 ### 10 Functional Programming
 
 Throughout my project, I used functional programming as much as possible. 
-In the following, you can find the proof of the function concepts with a detailed descriptions in the .py files.
+In the following, you can find the proof of the function concepts with a detailed description in the .py files.
+
 
    * Only final data structures
       [model_training.py](src/main/python/modeling/model_training.py)
