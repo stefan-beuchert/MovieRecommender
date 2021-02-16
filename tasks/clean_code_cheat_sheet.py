@@ -77,7 +77,8 @@ a = 1 + 2 + sum(1, 4)
 
 # 8) Make comments only if necessary. Good variable names can be better than comments. 
 # Never make a comment just that you have made one. It is better to have good code without
-# even one comment than having code that is contradict to the comments. Also unnecessary comments can confuse yourself and others in the future.
+# even one comment than having code that is contradict to the comments. 
+# Also unnecessary comments can confuse yourself and others in the future.
 
 # bad example
 # calculating profit by subtracting the expenses from the revenue
@@ -86,7 +87,9 @@ a = b - c
 # good example
 profit = revenue - expenses
 
-# 8) Make if statements as simple as possible
+# 9) But use comments if necessary! If you aren't sure if a comment is necessary or not: just make one.
+
+# 10) Make if statements as simple as possible
 
 # bad example 
 if not (some_function().and_some_oter_function() != (a + b + c)):
@@ -96,7 +99,7 @@ part_a = some_function().and_some_oter_function()
 part_b = a + b + c
 if part_a == part_b:
 
-# 9) Try to make as few statement blocks as possible
+# 11) Try to make as few statement blocks as possible
 
 # bad example
 if a:
@@ -114,7 +117,7 @@ if a and c: # this makes only sense, if the if statements stay uncomplicated
     elif:
         a = 4
 
-# 10 Make tests simple. Multiple simple tests are better than one complicated one. 
+# 12) Make tests simple. Multiple simple tests are better than one complicated one. 
 # This also makes it easier to identify the root of the problem if tests fail.
 
 # bad example
@@ -139,7 +142,7 @@ def test_two():
     c = and_a_third_big_thing_that_does_not_has_his_own_test("b")
     self.assertEqual(c, "expected result")
 
-# 11 using f-strings as often as possible
+# 13) Using f-strings as often as possible
 # There are many ways to include variable values dynamically in a string, but f-strings are by far the most intuitive way to do so.
 # Therefore f-strings should be used instead of other approaches like str.format() or adding strings with "+"
 
@@ -149,7 +152,7 @@ def test_two():
 # good example
 f"This {'is'} a good {'example'}!"
 
-# 12 Never deleting or adding values to a list, while iterating through it
+# 14) Never deleting or adding values to a list, while iterating through it
 # It is a very bad idea, to change the number of indexes in a list, while iterating over it.
 # The following example will show why:
 
@@ -166,7 +169,7 @@ print(a)   # -> [1, 2, 0]
 # good example
 l = l[var for var in l if var != 0]
 
-# 13 opening files in a with block
+# 15 Opening files in a with block
 # with makes has the advantage, that the file gets automatically closed, when leaving the code block
 
 # bad example
@@ -178,7 +181,7 @@ file.close() # never forget to close the file
 with open("file.csv") as file:
 	# do something
 
-# 14 write functions with only a few parameters
+# 16) Write functions with only a few parameters
 # Try to use as few arguments in your function as possible. 2 or less is desirable.
 
 # bad example
@@ -192,11 +195,11 @@ def make_something(x):
 	c = x.c
 	d = x.d
 
-# 15 don't write your own code
+# 17) Don't write your own code
 # whenever there is a library available, that can make your project easier, use it!
 # using library's means having less code and therefore less bad code
 
-# 16 use a config file
+# 18) Use a config file
 # The use of a config file is very important, to keep all configurations in one place.
 # The config file should contain all numerical and string variables, that are build from
 # hard coded values. All those variables should be made global (look at the correct naming conventions).

@@ -49,10 +49,13 @@ This software is not only limited to a specific datasets. By simply changing som
    
 I made 3 UML diagrams for this project. Each of those diagram has blue and orange parts. The blue parts are features that are already implemented in this project and the orang features may be added in future versions.
    * A [Use Case diagram](tasks/uml_diagrams/use_case_diagram.png) that shows the different actores and the variouse functions of the system. 
-   * A [Sequence diagram](tasks/uml_diagrams/sequence_diagram.png) that shows the different events that can occure while using the system. 
+   * A [Sequence diagram](tasks/uml_diagrams/sequence_diagram.png) that shows the different interactions between the different components. 
    * A [Activity diagram](tasks/uml_diagrams/activity_diagram.png) that shows the flow between different activitys. 
   
 ### 2 DDD
+
+   For the DDD part I made multiple sketches, that consist of multiple components / domains / bounded context. I have marked the implemented parts in blue and the not yet implemented parts in yellow (same as in the UML diagrams).
+
    * Problem Space
       * [Domain](tasks/ddd/ddd_problem_space.png) with Subdomains.
 
@@ -60,7 +63,7 @@ I made 3 UML diagrams for this project. Each of those diagram has blue and orang
       * [Context Map](tasks/ddd/ddd_solution_space.png) with Bounded Contexts and realationships.
 
    * Ubiquitous Language
-      * [Glossary](tasks_ddd/ubiquitous_language.pdf) with the most important terms.
+      * [Glossary](tasks_ddd/ubiquitous_language.pdf) with the most important terms. 
 
 
 ### 3 Metrics
@@ -121,16 +124,19 @@ And the five points, that proof my use of clean code. You can finde more details
 
       [data_processing.py](src/main/python/processing/data_preprocessing.py)
 
-   * Cheat Sheet point 14
+   * Cheat Sheet point 16
 
       Use as few function parameters as possible.
 
       [data_processing.py](src/main/python/processing/data_preprocessing.py)
 
-   * Cheat Sheet point
-   data_processing.py line 37 using lambda for simple functions to keep code short and still understandable
+   * Cheat Sheet point 9
+
+      Use short explaining comments for code, that may be not intuitivle understandable.
+      
+      [model_training.py](src/main/python/modeling/model_training.py) 
    
-   * Cheat Sheet point 16
+   * Cheat Sheet point 18
 
       Use a config file!
 
@@ -177,7 +183,7 @@ Some features that made my life easier while implementing this project are:
 * The terminal, which I used a lot
 
 
-Sadly I realized only after implementing most of the core features, that I could have used the Professional edition for free, because I am a student. This would have me allowed to use .http / .rest files, which can send http-request directly from the IDE. I had to use Postman for this. Also I could have used an integrated support for IPython Notebook, which would have made it possible to run and edit .ipynb files inside of the IDE.
+Sadly I realized only after implementing most of the core features, that I could have used the professional edition for free, because I am a student. This would have allowed me to use .http / .rest files, which can send http-request directly from the IDE. I had to use Postman for this. Also I could have used an integrated support for IPython Notebook, which would have made it possible to run and edit .ipynb files inside of the IDE.
 
 Now I know better for the next time :)
 
@@ -195,11 +201,17 @@ The [interpreter](tasks/dsl/dsl_interpreter.py) is used to convert the .dsl file
    
 ### 10 Functional Programming
 
-   * only final data structures
-   * (mostly) side effect free functions
-      -> model_training.py
-   * the use of higher-order functions
+Through out my project I used functional programming as much as possible. 
+In the following you can finde the proof of the function concepts with detailed description in the .py files.
+
+   * Only final data structures
+      [model_training.py](src/main/python/modeling/model_training.py)
+   * (Mostly) side effect free functions
+      [model_training.py](src/main/python/modeling/model_training.py)
+   * The use of higher-order functions
+      [data_preparation](src/main/python/preparation/data_preparation.py)
+      [data_processing.py](src/main/python/processing/data_preprocessing.py)
       -> data_processing.py 74
-   * functions as parameters and return values  
-   * use closures / anonymous functions
+   * Use closures / anonymous functions
+      [data_processing.py](src/main/python/processing/data_preprocessing.py)
       -> model data_processing.py

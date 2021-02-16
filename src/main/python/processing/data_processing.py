@@ -20,6 +20,11 @@
 # Task B.10. Functional Programming
 ####################################
 #
+# Higer-order functions:
+# Higer-order functions are functions that take other functions as arguments or return functions.
+# A good example for a higer order functions is the "map" function.
+# See line xx.
+#
 # The use of closures / anonymous functions:
 # Lambda functions can be very usefull, when we need a function only for a short period of time.
 # In the following case I have some simple functions, that I can just declare as namles function inside another function.
@@ -73,7 +78,6 @@ def clean_data(df_raw, important_columns, target_feature, unwanted_characters, s
     # example of the higher order function "map"
     mapped_feature = map(str.lower, df[target_feature])
     df.loc[:, target_feature] = list(mapped_feature)
-    # df.loc[:, target_feature] = df[target_feature].apply(lambda text: str.lower(text))
     # removing stopwords
     stop_words = get_stop_words(stop_word_language)
     df.loc[:, target_feature] = df[target_feature].apply(lambda text: remove_stopwords(text, stop_words))

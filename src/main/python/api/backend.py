@@ -89,5 +89,6 @@ def delete_data_set():
 db = connect_to_db(conf.DATABASE_URL, conf.DATABASE_NAME)
 processed_data = None
 model = None
-init(upload_raw_data(conf.PATH_RAW_DATA, db[conf.COLLECTION_RAW_DATA]))
+upload = upload_raw_data()
+init(upload(conf.PATH_RAW_DATA, db[conf.COLLECTION_RAW_DATA]))
 
