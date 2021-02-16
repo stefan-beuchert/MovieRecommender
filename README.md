@@ -211,7 +211,7 @@ In the following, you can find the proof of the function concepts with a detaile
       [model_training.py](src/main/python/modeling/model_training.py)
    * The use of higher-order functions
       [data_preparation](src/main/python/preparation/data_preparation.py)
-      [data_processing.py](src/main/python/processing/data_preprocessing.py)
+      [data_processing.py](src/main/python/processing/data_processing.py)
    * Use closures / anonymous functions
       [data_processing.py](src/main/python/processing/data_processing.py)
 
