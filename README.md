@@ -14,7 +14,7 @@
 
 ### General
 This repository contains a backend, that can be used to get (movie) recommendations based on a dataset of movies represented by text documents.
-This software is not only limited to a specific datasets. By simply changing some values in the config.py, this backend be used as a recommender system for all sorts of text documents.
+This software is not only limited to a specific dataset. By simply changing some values in the config.py, this backend is used as a recommender system for all sorts of text documents.
 
 
 ### Prerequisites
@@ -48,13 +48,13 @@ This software is not only limited to a specific datasets. By simply changing som
 ### 1 UML
    
 I made 3 UML diagrams for this project. Each of those diagram has blue and orange parts. The blue parts are features that are already implemented in this project and the orang features may be added in future versions.
-   * A [Use Case diagram](tasks/uml_diagrams/use_case_diagram.png) that shows the different actores and the variouse functions of the system. 
+   * A [Use Case diagram](tasks/uml_diagrams/use_case_diagram.png) that shows the different actors and the various functions of the system. 
    * A [Sequence diagram](tasks/uml_diagrams/sequence_diagram.png) that shows the different interactions between the different components. 
-   * A [Activity diagram](tasks/uml_diagrams/activity_diagram.png) that shows the flow between different activitys. 
+   * A [Activity diagram](tasks/uml_diagrams/activity_diagram.png) that shows the flow between different activities. 
   
 ### 2 DDD
 
-   For the DDD part I made multiple sketches, that consist of multiple components / domains / bounded context. I have marked the implemented parts in blue and the not yet implemented parts in yellow (same as in the UML diagrams).
+   For the DDD part, I made multiple sketches, that consist of multiple components/domains / bounded context. I have marked the implemented parts in blue and the not yet implemented parts in yellow (same as in the UML diagrams).
 
    * Problem Space
       * [Domain](tasks/ddd/ddd_problem_space.png) with Subdomains.
@@ -67,8 +67,8 @@ I made 3 UML diagrams for this project. Each of those diagram has blue and orang
 
 
 ### 3 Metrics
-For metrics I used Sonarqube (SonarCloud to be specific).
-I used multiple different metrics to ensure the quality of my code. Each metric is documented by a batch (which updates after each push). The metric are:
+For metrics, I used Sonarqube (SonarCloud to be specific).
+I used multiple different metrics to ensure the quality of my code. Each metric is documented by a batch (which updates after each push). The metrics are:
    * bugs
 
       [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=stefan-beuchert_MovieRecommender&metric=bugs)](https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender)
@@ -81,7 +81,7 @@ I used multiple different metrics to ensure the quality of my code. Each metric 
 
       [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=stefan-beuchert_MovieRecommender&metric=security_rating)](https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender)
 
-   * reliablility
+   * reliability
 
       [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=stefan-beuchert_MovieRecommender&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender)
 
@@ -98,9 +98,9 @@ I used multiple different metrics to ensure the quality of my code. Each metric 
       [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=stefan-beuchert_MovieRecommender&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender)
 
 
-The SonarCloud overview for this project can be acessed by using this [link](https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender). 
+The SonarCloud overview for this project can be accessed by using this [link](https://sonarcloud.io/dashboard?id=stefan-beuchert_MovieRecommender). 
 
-And [this](tasks/SonarCloud.PNG) is a screenshot of the website, if it should not be available for some reason.
+And [this](tasks/SonarCloud.PNG) is a screenshot of the website if it should not be available for some reason.
 
 
 ### 4 Clean Code Development
@@ -108,19 +108,19 @@ And [this](tasks/SonarCloud.PNG) is a screenshot of the website, if it should no
 A cheat sheet with my most important clean code principles. I decided to write my cheat sheet in python, so I can test my code examples right on the spot.
    * [Cheat Sheet](tasks/clean_code_cheat_sheet.py)
    
-And the five points, that proof my use of clean code. You can finde more details for each point in the linked file.
+And the five points, that prove my use of clean code. You can find more details for each point in the linked file.
 
    * Cheat Sheet points 3 and 4:
 
       Keeping statements simple and making them multiline, if necessary.
-      This can also help debuging code, by just commenting out one or more lines
-      and still keep the statement syntacticly correct.
+      This can also help debugging code, by just commenting out one or more lines
+      and still, keep the statement syntactically correct.
 
       [backend.py](src/main/python/api/backend.py)
 
    * Cheat Sheet point  8: 
    
-      Choosing good variable names, to make code selfexplanatory. 
+      Choosing good variable names, to make code self-explanatory. 
 
       [data_processing.py](src/main/python/processing/data_preprocessing.py)
 
@@ -132,7 +132,7 @@ And the five points, that proof my use of clean code. You can finde more details
 
    * Cheat Sheet point 9
 
-      Use short explaining comments for code, that may be not intuitivle understandable.
+      Use short explaining comments for code, that may be not intuitively understandable.
       
       [model_training.py](src/main/python/modeling/model_training.py) 
    
@@ -148,22 +148,22 @@ I used pybuilder as my build management. This was the first time I used a build 
 and after some struggles at the beginning, I now see the advantages of pybuiler :)
    * My [build file](build.py)
    * The files for [automated documentation with sphinx](docs)
-   * An [example documentation](tasks/documentation/documentation.html), but it seems that github only shows raw html code. [This](https://htmlpreview.github.io/) webiste can help, to render the documentation even if it does not display everything correctly.
+   * An [example documentation](tasks/documentation/documentation.html), but it seems that GitHub only shows raw HTML code. [This](https://htmlpreview.github.io/) website can help, to render the documentation even if it does not display everything correctly.
 
 ### 6 Unit-Tests
 
-I made unit tests with the python unittest library. This are the two files that implement my tests. When building my project with pybuilder, all tests get run by default.
+I made unit tests with the python unittest library. These are the two files that implement my tests. When building my project with pybuilder, all tests get run by default.
    * [unit tests I](src/unittest/python/modeling/model_training_tests.py)
    * [unit tests II](src/unittest/python/processing/data_processing_tests.py)
    
 ### 7 Continuous Delivery
 
-For the CD pipeline I made use of Travis CI.
-Whenever I push new code to my git repo, a new build gets triggerd. [This](https://travis-ci.org/github/stefan-beuchert/MovieRecommender) is the corresponding website for this project.
+For the CD pipeline, I made use of Travis CI.
+Whenever I push new code to my git repo, a new build gets triggered. [This](https://travis-ci.org/github/stefan-beuchert/MovieRecommender) is the corresponding website for this project.
 
-More informations can be found in the [properties file](sonar-project.properties)
+More information can be found in the [properties file](sonar-project.properties)
 
-As proof, that my last build was succesfull, I embedded this batch:
+As proof, that my last build was successful, I embedded this batch:
 
 ![travis_build](https://travis-ci.org/stefan-beuchert/MovieRecommender.svg?branch=main)
 
@@ -183,7 +183,7 @@ Some features that made my life easier while implementing this project are:
 * The terminal, which I used a lot
 
 
-Sadly I realized only after implementing most of the core features, that I could have used the professional edition for free, because I am a student. This would have allowed me to use .http / .rest files, which can send http-request directly from the IDE. I had to use Postman for this. Also I could have used an integrated support for IPython Notebook, which would have made it possible to run and edit .ipynb files inside of the IDE.
+Sadly I realized only after implementing most of the core features, that I could have used the professional edition for free because I am a student. This would have allowed me to use .http / .rest files, which can send HTTP-request directly from the IDE. I had to use Postman for this. Also, I could have used integrated support for IPython Notebook, which would have made it possible to run and edit .ipynb files inside of the IDE.
 
 Now I know better for the next time :)
 
@@ -201,8 +201,8 @@ The [interpreter](tasks/dsl/dsl_interpreter.py) is used to convert the .dsl file
    
 ### 10 Functional Programming
 
-Through out my project I used functional programming as much as possible. 
-In the following you can finde the proof of the function concepts with detailed description in the .py files.
+Throughout my project, I used functional programming as much as possible. 
+In the following, you can find the proof of the function concepts with a detailed descriptions in the .py files.
 
    * Only final data structures
       [model_training.py](src/main/python/modeling/model_training.py)
@@ -211,7 +211,6 @@ In the following you can finde the proof of the function concepts with detailed 
    * The use of higher-order functions
       [data_preparation](src/main/python/preparation/data_preparation.py)
       [data_processing.py](src/main/python/processing/data_preprocessing.py)
-      -> data_processing.py 74
    * Use closures / anonymous functions
       [data_processing.py](src/main/python/processing/data_preprocessing.py)
-      -> model data_processing.py
+
