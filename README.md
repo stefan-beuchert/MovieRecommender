@@ -122,13 +122,13 @@ And the five points, that prove my use of clean code. You can find more details 
    
       Choosing good variable names, to make code self-explanatory. 
 
-      [data_processing.py](src/main/python/processing/data_preprocessing.py)
+      [data_processing.py](src/main/python/processing/data_processing.py)
 
    * Cheat Sheet point 16
 
       Use as few function parameters as possible.
 
-      [data_processing.py](src/main/python/processing/data_preprocessing.py)
+      [data_processing.py](src/main/python/processing/data_processing.py)
 
    * Cheat Sheet point 9
 
@@ -213,5 +213,5 @@ In the following, you can find the proof of the function concepts with a detaile
       [data_preparation](src/main/python/preparation/data_preparation.py)
       [data_processing.py](src/main/python/processing/data_preprocessing.py)
    * Use closures / anonymous functions
-      [data_processing.py](src/main/python/processing/data_preprocessing.py)
+      [data_processing.py](src/main/python/processing/data_processing.py)
 

@@ -2,7 +2,7 @@
 
 * This is the file, that contains my dsl language.
 * The idea behind this dsl, is to make a programming language more like a "real" language.
-* This means I am trying to use less mathematical operators and more words.
+* This means I am trying to use fewer mathematical operators and more words.
 * It can be used for simple mathematical operations on two numbers.
 * But just see below:
 
